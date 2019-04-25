@@ -1,0 +1,100 @@
+student@T4:~/alexgit/mca$ git clone https://github.com/anjanaalexkariappuram/alexnewone.git
+Cloning into 'alexnewone'...
+warning: You appear to have cloned an empty repository.
+student@T4:~/alexgit/mca$ gedit simple.c
+student@T4:~/alexgit/mca$ git add simple.c
+student@T4:~/alexgit/mca$ config --global user.email "anjanaalex0007@gmail.com"
+
+Command 'config' not found, did you mean:
+
+  command 'zconfig' from deb python-zconfig
+  command 'mconfig' from deb mono-devel
+  command 'iconfig' from deb ipmiutil
+  command 'vconfig' from deb vlan
+  command 'fconfig' from deb redboot-tools
+
+Try: apt install <deb name>
+
+student@T4:~/alexgit/mca$ git config --global user.email "anjanaalex0007@gmail.com"
+student@T4:~/alexgit/mca$  git config --global user.name "anjanaalexkariappuram"
+student@T4:~/alexgit/mca$ git commit -m "i m on the way to study"
+U	aa.c
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+student@T4:~/alexgit/mca$ git commit -m "hai hello"
+U	aa.c
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+student@T4:~/alexgit/mca$ git commit -m "hai hello"
+U	aa.c
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+student@T4:~/alexgit/mca$ ls
+alexclone  alexnewone  bb.c  hellonew  newone.c  sample.c  simple.c  welcome.c
+student@T4:~/alexgit/mca$ git rm aa.c
+aa.c: needs merge
+rm 'aa.c'
+student@T4:~/alexgit/mca$ git rm -r aa.c
+fatal: pathspec 'aa.c' did not match any files
+student@T4:~/alexgit/mca$ git add aa.c
+fatal: pathspec 'aa.c' did not match any files
+student@T4:~/alexgit/mca$ git add aa.c
+fatal: pathspec 'aa.c' did not match any files
+student@T4:~/alexgit/mca$ cd ..
+student@T4:~/alexgit$ git rm -r aa.c
+fatal: not a git repository (or any of the parent directories): .git
+student@T4:~/alexgit$ cd mca
+student@T4:~/alexgit/mca$ cd alexnewone
+student@T4:~/alexgit/mca/alexnewone$ git add aa.c
+student@T4:~/alexgit/mca/alexnewone$ git rm -r aa.c
+error: the following file has changes staged in the index:
+    aa.c
+(use --cached to keep the file, or -f to force removal)
+student@T4:~/alexgit/mca/alexnewone$ git rm aa.c
+error: the following file has changes staged in the index:
+    aa.c
+(use --cached to keep the file, or -f to force removal)
+student@T4:~/alexgit/mca/alexnewone$ git commit -m "haiiiiiii"
+[master (root-commit) b6e723f] haiiiiiii
+ 1 file changed, 2 insertions(+)
+ create mode 100644 aa.c
+student@T4:~/alexgit/mca/alexnewone$  git remote add orgin "https://github.com/anjanaalexkariappuram/alexnewone.git"
+student@T4:~/alexgit/mca/alexnewone$ git push origin master
+Username for 'https://github.com': anjanaalexkariappuram
+Password for 'https://anjanaalexkariappuram@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 251 bytes | 251.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anjanaalexkariappuram/alexnewone.git
+ * [new branch]      master -> master
+student@T4:~/alexgit/mca/alexnewone$ git fetch origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/anjanaalexkariappuram/alexnewone
+ * branch            master     -> FETCH_HEAD
+   b6e723f..608cb65  master     -> origin/master
+student@T4:~/alexgit/mca/alexnewone$ git diff origin/master
+diff --git a/aa.c b/aa.c
+index 8839b13..2c5576c 100644
+--- a/aa.c
++++ b/aa.c
+@@ -1,2 +1,2 @@
+-git commit -m "i m on the way to study   sayyyyyy"
++git commit -m "i m on the way to study"
+ 
+student@T4:~/alexgit/mca/alexnewone$ git merge origin/master
+Updating b6e723f..608cb65
+Fast-forward
+ aa.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+student@T4:~/alexgit/mca/alexnewone$ 
+
