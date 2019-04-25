@@ -1,0 +1,224 @@
+student@T4:~$ man cp
+student@T4:~$ mkdir ajce
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir mca
+student@T4:~/ajce$ cd mca
+student@T4:~/ajce/mca$ mkdir rmca
+student@T4:~/ajce/mca$ cd rmca
+student@T4:~/ajce/mca/rmca$ mkdir lmca
+student@T4:~/ajce/mca/rmca$ cd lmca
+student@T4:~/ajce/mca/rmca/lmca$ mkdir dmca
+student@T4:~/ajce/mca/rmca/lmca$ cd dmca
+student@T4:~/ajce/mca/rmca/lmca/dmca$ cd..
+cd..: command not found
+student@T4:~/ajce/mca/rmca/lmca/dmca$ cd ..
+student@T4:~/ajce/mca/rmca/lmca$ mkdir rmca
+student@T4:~/ajce/mca/rmca/lmca$ mkdir lmca
+student@T4:~/ajce/mca/rmca/lmca$ cat > hello.txt
+welcome 
+wat about u^C
+student@T4:~/ajce/mca/rmca/lmca$ cat >example.txt
+this is my first doc^C
+student@T4:~/ajce/mca/rmca/lmca$ mv example.txt rmca
+student@T4:~/ajce/mca/rmca/lmca$ mv example.txt lmca
+mv: cannot stat 'example.txt': No such file or directory
+student@T4:~/ajce/mca/rmca/lmca$ mv hello.txt lmca
+student@T4:~/ajce/mca/rmca/lmca$ cd rmca
+student@T4:~/ajce/mca/rmca/lmca/rmca$ cat > sam.txt
+how are u?^C
+student@T4:~/ajce/mca/rmca/lmca/rmca$ man cp
+student@T4:~/ajce/mca/rmca/lmca/rmca$ cp sam.txt rmca dmca
+cp: target 'dmca' is not a directory
+student@T4:~/ajce/mca/rmca/lmca/rmca$ cp sam.txt ./lmca/sa.txt
+cp: cannot create regular file './lmca/sa.txt': No such file or directory
+student@T4:~/ajce/mca/rmca/lmca/rmca$ cp sam.txt ./sa.txt
+student@T4:~/ajce/mca/rmca/lmca/rmca$ cd ..
+student@T4:~/ajce/mca/rmca/lmca$ ls
+dmca  lmca  rmca
+student@T4:~/ajce/mca/rmca/lmca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Feb 11 16:50 dmca
+drwxr-xr-x 2 student student 4096 Feb 11 16:56 lmca
+drwxr-xr-x 2 student student 4096 Feb 11 17:06 rmca
+student@T4:~/ajce/mca/rmca/lmca$ cp sam.txt ./dmca/sa.txt
+cp: cannot stat 'sam.txt': No such file or directory
+student@T4:~/ajce/mca/rmca/lmca$ cp sam.txt .\dmca\sa.txt
+cp: cannot stat 'sam.txt': No such file or directory
+student@T4:~/ajce/mca/rmca/lmca$ cp sam.txt dmca\sa.txt
+cp: cannot stat 'sam.txt': No such file or directory
+student@T4:~/ajce/mca/rmca/lmca$ cd dmca
+student@T4:~/ajce/mca/rmca/lmca/dmca$ cp sam.txt sa.txt
+cp: cannot stat 'sam.txt': No such file or directory
+student@T4:~/ajce/mca/rmca/lmca/dmca$ cd..
+cd..: command not found
+student@T4:~/ajce/mca/rmca/lmca/dmca$ cd ..
+student@T4:~/ajce/mca/rmca/lmca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Feb 11 16:50 dmca
+drwxr-xr-x 2 student student 4096 Feb 11 16:56 lmca
+drwxr-xr-x 2 student student 4096 Feb 11 17:06 rmca
+student@T4:~/ajce/mca/rmca/lmca$ ls
+dmca  lmca  rmca
+student@T4:~/ajce/mca/rmca/lmca$ ls -a
+.  ..  dmca  lmca  rmca
+student@T4:~/ajce/mca/rmca/lmca$ cp > abc.txt
+cp: missing file operand
+Try 'cp --help' for more information.
+student@T4:~/ajce/mca/rmca/lmca$ cp abc.txt
+cp: missing destination file operand after 'abc.txt'
+Try 'cp --help' for more information.
+student@T4:~/ajce/mca/rmca/lmca$ touch abc.txt
+student@T4:~/ajce/mca/rmca/lmca$ cat > abc.txt
+12
+ab
+34
+6^C
+student@T4:~/ajce/mca/rmca/lmca$ cat abc.txt
+12
+ab
+34
+student@T4:~/ajce/mca/rmca/lmca$ cp abc.txt .
+cp: 'abc.txt' and './abc.txt' are the same file
+student@T4:~/ajce/mca/rmca/lmca$ cp abc.txt ..
+student@T4:~/ajce/mca/rmca/lmca$ ls
+abc.txt  dmca  lmca  rmca
+student@T4:~/ajce/mca/rmca/lmca$ cd ..
+student@T4:~/ajce/mca/rmca$ ls
+abc.txt  lmca
+student@T4:~/ajce/mca/rmca$ cat abc.txt
+12
+ab
+34
+student@T4:~/ajce/mca/rmca$ cp abc.txt ..
+student@T4:~/ajce/mca/rmca$ cd ..
+student@T4:~/ajce/mca$ ls
+abc.txt  rmca
+student@T4:~/ajce/mca$ cd rmca
+student@T4:~/ajce/mca/rmca$ cd lmca
+student@T4:~/ajce/mca/rmca/lmca$ cd lmca
+student@T4:~/ajce/mca/rmca/lmca/lmca$ cp hello.txt anjana.txt
+student@T4:~/ajce/mca/rmca/lmca/lmca$ cp anjana.txt lmca
+student@T4:~/ajce/mca/rmca/lmca/lmca$ ls
+anjana.txt  hello.txt  lmca
+student@T4:~/ajce/mca/rmca/lmca/lmca$ cat >alex.txt
+12
+345
+sffgh
+^C
+student@T4:~/ajce/mca/rmca/lmca/lmca$ rmkdir lmca
+
+Command 'rmkdir' not found, did you mean:
+
+  command 'rfmkdir' from deb dpm
+  command 'mkdir' from deb coreutils
+  command 'hmkdir' from deb hfsutils
+  command 'rmdir' from deb coreutils
+  command 'mmkdir' from deb mblaze
+
+Try: apt install <deb name>
+
+student@T4:~/ajce/mca/rmca/lmca/lmca$ rmdir lmca
+rmdir: failed to remove 'lmca': Not a directory
+student@T4:~/ajce/mca/rmca/lmca/lmca$ cd ..
+student@T4:~/ajce/mca/rmca/lmca$ rmdir lmca
+rmdir: failed to remove 'lmca': Directory not empty
+student@T4:~/ajce/mca/rmca/lmca$ cd ~
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir new
+student@T4:~/ajce$ cat > qw.txt
+hdgf
+36547
+5768
+^C
+student@T4:~/ajce$ cd new
+student@T4:~/ajce/new$ cat > ww.txt
+qwret
+eryt
+ghh
+56
+^C
+student@T4:~/ajce/new$ 
+student@T4:~/ajce/new$ ls
+ww.txt
+student@T4:~/ajce/new$ cp qw.txt new
+cp: cannot stat 'qw.txt': No such file or directory
+student@T4:~/ajce/new$ cd ..
+student@T4:~/ajce$ cp qw.txt new
+student@T4:~/ajce$ cd new
+student@T4:~/ajce/new$ ls
+qw.txt  ww.txt
+student@T4:~/ajce/new$ cd ..
+student@T4:~/ajce$ mkdir rr
+student@T4:~/ajce$ cd rr
+student@T4:~/ajce/rr$ cd ..
+student@T4:~/ajce$ cat > tt.txt
+rtt
+rti
+^C
+student@T4:~/ajce$ cp *.txt rr
+student@T4:~/ajce$ cd rr
+student@T4:~/ajce/rr$ ls
+qw.txt  tt.txt
+student@T4:~/ajce/rr$ cd ..
+student@T4:~/ajce$ cp -R new rr
+student@T4:~/ajce$ cd rr
+student@T4:~/ajce/rr$ ls
+new  qw.txt  tt.txt
+student@T4:~/ajce/rr$ cd ..
+student@T4:~/ajce$ mkdir ss
+student@T4:~/ajce$ cp -r mca ss rr
+student@T4:~/ajce$ cd rr
+student@T4:~/ajce/rr$ ls
+mca  new  qw.txt  ss  tt.txt
+student@T4:~/ajce/rr$ cp -i
+cp: missing file operand
+Try 'cp --help' for more information.
+student@T4:~/ajce/rr$ cd ..
+student@T4:~/ajce$ cp -b
+cp: missing file operand
+Try 'cp --help' for more information.
+student@T4:~/ajce$ ls
+mca  new  qw.txt  rr  ss  tt.txt
+student@T4:~/ajce$ cp -b qw.txt tt.txt
+student@T4:~/ajce$ ls
+mca  new  qw.txt  rr  ss  tt.txt  tt.txt~
+student@T4:~/ajce$ cp -b qw.txt
+cp: missing destination file operand after 'qw.txt'
+Try 'cp --help' for more information.
+student@T4:~/ajce$ ls
+mca  new  qw.txt  rr  ss  tt.txt  tt.txt~
+student@T4:~/ajce$ cp -i tt.txt qw.txt
+cp: overwrite 'qw.txt'? y
+student@T4:~/ajce$ ls
+mca  new  qw.txt  rr  ss  tt.txt  tt.txt~
+student@T4:~/ajce$ cat tt.txt
+hdgf
+36547
+5768
+student@T4:~/ajce$ cat qw.txt
+hdgf
+36547
+5768
+student@T4:~/ajce$ ls
+mca  new  qw.txt  rr  ss  tt.txt  tt.txt~
+student@T4:~/ajce$ cat > aa.txt
+rtyu
+ajd8
+^C
+student@T4:~/ajce$ 
+student@T4:~/ajce$ cp -u aa.txt tt.txt
+student@T4:~/ajce$ cat tt.txt
+rtyu
+ajd8
+student@T4:~/ajce$ cat aa.txt
+rtyu
+ajd8
+student@T4:~/ajce$ cp -u tt.txt aa.txt
+student@T4:~/ajce$ cat tt.txt
+rtyu
+ajd8
+student@T4:~/ajce$ cat aa.txt
+rtyu
+ajd8
+student@T4:~/ajce$ 
+

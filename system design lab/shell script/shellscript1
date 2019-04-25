@@ -1,0 +1,88 @@
+student@T5:~$ vi anjana.sh
+student@T5:~$ chmod 1+x anjana.sh
+chmod: invalid mode: ‘1+x’
+Try 'chmod --help' for more information.
+student@T5:~$ chmod +x anjana.sh
+student@T5:~$ ./anjana.sh
+haii
+student@T5:~$ gedit alex.sh
+student@T5:~$ chmod +x file.sh
+student@T5:~$ ./file.sh
+hai 
+student@T5:~$ chmod +x myfirstscript.sh
+student@T5:~$ ./myfirstscript.sh
+hello world!
+The date today is Thu Mar 21 14:30:27 IST 2019
+The current directory is /home/student
+student@T5:~$ gedit s.sh
+student@T5:~$ chmod +x s.sh
+student@T5:~$ ./s.sh
+value of var is test string
+student@T5:~$ gedit s1.sh
+student@T5:~$ chmod +x s1.sh
+student@T5:~$ ./s1.sh
+value of var is $var
+student@T5:~$ gedit cat.sh
+student@T5:~$ chmod +x cat.sh
+student@T5:~$ ./cat.sh a b d j
+The command is ./cat.sh
+The first argument is a
+The second argument is b
+The third argument is d
+The fourth argument is j
+student@T5:~$ ./cat.sh 1 2 3 4
+The command is ./cat.sh
+The first argument is 1
+The second argument is 2
+The third argument is 3
+The fourth argument is 4
+student@T5:~$ gedit cat.sh
+student@T5:~$ ./cat.sh 1 2 3 4 5 6 7
+The command is ./cat.sh
+The first argument is 1
+The second argument is 2
+The third argument is 3
+The fourth argument is 4
+7
+1 2 3 4 5 6 7
+1 2 3 4 5 6 7
+student@T5:~$ gedit demo.sh
+student@T5:~$ chmod +x demo.sh
+student@T5:~$ ./demo.sh 
+
+
+student@T5:~$ gedit add.sh
+student@T5:~$ chmod +x add.sh
+student@T5:~$ ./add.sh 
+5+10=15
+student@T5:~$ gedit add1.sh
+student@T5:~$ chmod +x add1.sh
+student@T5:~$ ./add1.sh 
+enter two numbers :x5
++5=5
+student@T5:~$ chmod +x add1.sh
+student@T5:~$ ./add1.sh 
+enter two numbers :x 5 3
+./add1.sh: line 2: 5 3: syntax error in expression (error token is "3")
++5 3=
+student@T5:~$ gedit add1.sh
+student@T5:~$ chmod +x add1.sh
+student@T5:~$ ./add1.sh 
+enter two numbers : 1
+1+=1
+student@T5:~$ 3
+3: command not found
+student@T5:~$ chmod +x add1.sh
+student@T5:~$ ./add1.sh 
+enter two numbers : 5 2
+5+2=7
+student@T5:~$ gedit add2.sh
+student@T5:~$ chmod +x add2.sh
+student@T5:~$ ./add2.sh 
+Sum is 10+20
+student@T5:~$ gedit add2.sh
+student@T5:~$ chmod +x add2.sh
+student@T5:~$ ./add2.sh 
+Sum is 30
+student@T5:~$ 
+

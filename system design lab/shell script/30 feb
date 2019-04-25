@@ -1,0 +1,81 @@
+while2.sh
+
+
+
+n=1
+while [ $n -le 10 ]
+do
+echo $n
+n=`expr $n + 1 `
+done
+
+
+while1.sh
+
+i=12
+while test "$i" -gt 0
+do
+i=`expr $i - 1`
+echo $i
+done
+
+while3.sh
+
+i=1
+sum=0
+while [ "$i" -le 10 ]
+do
+echo Adding $i into the sum
+sum=`expr $sum + $i`
+i=`expr $i + 1`
+done
+echo the sum is $sum
+
+
+oddsum
+
+echo  “Enter Upper limit”
+read n
+i=1
+while [ $i -lt $n ]
+do
+expr ‘$sum=$sum+$i’
+expr ‘$i=$i+2’
+done
+echo “sum is : $sum”
+
+
+prime.sh
+
+
+
+echo Enter a number till which you want to print the prime numbers  
+ read num  
+ c=2  
+ while [ $c -le $num ]  
+ do  
+ flag=1  
+ i=2  
+ while [ $i -lt $c ]  
+ do  
+  a=`expr $c % $i`  
+  if [ $a -eq 0 ]  
+  then  
+  flag=0  
+  fi  
+  i=`expr $i + 1`  
+ done  
+ if [ $flag -ne 0 ]  
+ then  
+  echo $c  
+ fi  
+ c=`expr $c + 1`  
+ done  
+
+
+
+
+
+
+
+

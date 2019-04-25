@@ -1,0 +1,116 @@
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir wccommand
+student@T4:~/ajce$ cd wccommand
+student@T4:~/ajce/wccommand$ cat > hello.txt
+ewr
+fhfg
+^C
+student@T4:~/ajce/wccommand$ 
+student@T4:~/ajce/wccommand$ cat >sam.txt
+errt
+fhg
+bvjg
+^C
+student@T4:~/ajce/wccommand$ wc hello.txt
+2 2 9 hello.txt
+student@T4:~/ajce/wccommand$ wc -l sam.txt
+3 sam.txt
+student@T4:~/ajce/wccommand$ wc -c sam.txt
+14 sam.txt
+student@T4:~/ajce/wccommand$ wc -m sam.txt
+14 sam.txt
+student@T4:~/ajce/wccommand$ wc -L sam.txt
+4 sam.txt
+student@T4:~/ajce/wccommand$ cat >qq.txt
+1
+32
+56
+77
+90
+4
+6
+gfhf
+bvjsdfdskjgbdskjb
+^C
+student@T4:~/ajce/wccommand$ wc -l qq.txt
+9 qq.txt
+student@T4:~/ajce/wccommand$ wc -c qq.txt
+41 qq.txt
+student@T4:~/ajce/wccommand$ wc -m qq.txt
+41 qq.txt
+student@T4:~/ajce/wccommand$ wc -L qq.txt
+17 qq.txt
+student@T4:~/ajce/wccommand$ wc -w qq.txt
+9 qq.txt
+student@T4:~/ajce/wccommand$ cat > ww.txt
+hello i m there
+wat about u
+i was there in the mng
+3
+4
+5
+6
+^C
+student@T4:~/ajce/wccommand$ wc -l ww.txt
+7 ww.txt
+student@T4:~/ajce/wccommand$ wc -c ww.txt
+59 ww.txt
+student@T4:~/ajce/wccommand$ wc -m ww.txt
+59 ww.txt
+student@T4:~/ajce/wccommand$ wc -L ww.txt
+22 ww.txt
+student@T4:~/ajce/wccommand$ cd  ..
+student@T4:~/ajce$ mkdir cutcommand
+student@T4:~/ajce$ cd cutcommand
+student@T4:~/ajce/cutcommand$ cat > ee.txt
+Anjana Alex       
+kariappuram house
+there are something happend 
+^C
+student@T4:~/ajce/cutcommand$ cut -c2 ee.txt
+n
+a
+h
+student@T4:~/ajce/cutcommand$ cut -c3,4,5 ee.txt
+jan
+ria
+ere
+student@T4:~/ajce/cutcommand$ man cut
+student@T4:~/ajce/cutcommand$ cut -b1,5 ee.txt
+An
+ka
+te
+student@T4:~/ajce/cutcommand$ cut -c1,5 ee.txt
+An
+ka
+te
+student@T4:~/ajce/cutcommand$ cut -f1,5 ee.txt
+Anjana Alex
+kariappuram house
+there are something happend 
+student@T4:~/ajce/cutcommand$ cut -n1,5 ee.txt
+cut: invalid option -- '1'
+Try 'cut --help' for more information.
+student@T4:~/ajce/cutcommand$ touch f111.txt
+student@T4:~/ajce/cutcommand$ cut -f2 f111.txt
+heeello
+anjaly
+reeja
+student@T4:~/ajce/cutcommand$ cut -f2 f112.txt
+hiiii,heeello,good
+anjana,anjaly,meenu
+anju,reeja,riya
+student@T4:~/ajce/cutcommand$ man cut
+student@T4:~/ajce/cutcommand$ cut -z3,9 ee.txt
+cut: invalid option -- '3'
+Try 'cut --help' for more information.
+student@T4:~/ajce/cutcommand$ man cut
+student@T4:~/ajce/cutcommand$ man cut
+student@T4:~/ajce/cutcommand$ ^C
+student@T4:~/ajce/cutcommand$ ^C
+student@T4:~/ajce/cutcommand$ ^C
+student@T4:~/ajce/cutcommand$ ^C
+student@T4:~/ajce/cutcommand$ ^C
+student@T4:~/ajce/cutcommand$ ^C
+student@T4:~/ajce/cutcommand$ 
+

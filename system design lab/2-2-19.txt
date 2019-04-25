@@ -1,0 +1,176 @@
+student@T4:~$ echo a
+a
+student@T4:~$ read a
+5  
+student@T4:~$ echo $a
+5
+student@T4:~$ man echo
+student@T4:~$ mkdir ajce
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir mca
+student@T4:~/ajce$ cd mca
+student@T4:~/ajce/mca$ mkdir rmca
+student@T4:~/ajce/mca$ mkdir lmca
+student@T4:~/ajce/mca$ mkdir dmca
+student@T4:~/ajce/mca$ cd ~
+student@T4:~$ cd ..
+student@T4:/home$ cd /
+student@T4:/$ pwd 
+/
+student@T4:/$ cd mca
+bash: cd: mca: No such file or directory
+student@T4:/$ cd ~
+student@T4:~$ cd mca
+bash: cd: mca: No such file or directory
+student@T4:~$ cd /
+student@T4:/$ cd ~
+student@T4:~$ cd ajce
+student@T4:~/ajce$ ls-l
+ls-l: command not found
+student@T4:~/ajce$ ls
+mca
+student@T4:~/ajce$ ls -l
+total 4
+drwxr-xr-x 5 student student 4096 Feb  2 17:07 mca
+student@T4:~/ajce$ ls -a
+.  ..  mca
+student@T4:~/ajce$ ls -t
+mca
+student@T4:~/ajce$ ls -s
+total 4
+4 mca
+student@T4:~/ajce$ ls *
+dmca  lmca  rmca
+student@T4:~/ajce$ ls -r
+mca
+student@T4:~/ajce$ ls -R
+.:
+mca
+
+./mca:
+dmca  lmca  rmca
+
+./mca/dmca:
+
+./mca/lmca:
+
+./mca/rmca:
+student@T4:~/ajce$ ls >out.txt
+student@T4:~/ajce$ ls -d*/
+ls: invalid option -- '*'
+Try 'ls --help' for more information.
+student@T4:~/ajce$ cd ~
+student@T4:~$ cd ajce
+student@T4:~/ajce$ cd mca
+student@T4:~/ajce/mca$ cd rmca
+student@T4:~/ajce/mca/rmca$ cat sample.txt
+welcome
+student@T4:~/ajce/mca/rmca$ cat >sam.txt
+1
+2
+3
+iuji
+^C
+student@T4:~/ajce/mca/rmca$ cat sam.txt
+1
+2
+3
+iuji
+student@T4:~/ajce/mca/rmca$ cat *.txt
+welcome
+1
+2
+3
+iuji
+student@T4:~/ajce/mca/rmca$ cat sample.txt sam.txt
+welcome
+1
+2
+3
+iuji
+student@T4:~/ajce/mca/rmca$ cat sample.txt > sam.txt
+student@T4:~/ajce/mca/rmca$ cat sam.txt sample.txt >exam.txt
+student@T4:~/ajce/mca/rmca$ touch hello.txt
+student@T4:~/ajce/mca/rmca$ cat hello.txt
+anjana alex
+student@T4:~/ajce/mca/rmca$ cat sample >> hello.txt
+cat: sample: No such file or directory
+student@T4:~/ajce/mca/rmca$ cat sample.txt >> hello.txt
+student@T4:~/ajce/mca/rmca$ cat hello.txt
+anjana alex
+welcome
+student@T4:~/ajce/mca/rmca$ cat sample.txt hello.txt
+welcome
+anjana alex
+welcome
+student@T4:~/ajce/mca/rmca$ cat -s sam.txt
+welcome
+1
+2
+3
+4
+5
+6
+7
+
+student@T4:~/ajce/mca/rmca$ cat -s sam.txt
+welcome
+1
+
+6
+
+78
+
+900
+
+student@T4:~/ajce/mca/rmca$ cat -ssam.txt
+cat: invalid option -- 'a'
+Try 'cat --help' for more information.
+student@T4:~/ajce/mca/rmca$ echo -e
+
+student@T4:~/ajce/mca/rmca$ cd ~
+student@T4:~$ echo welcome
+welcome
+student@T4:~$ echo -e
+
+student@T4:~$ echo -e "welcome"
+welcome
+student@T4:~$ echo -n "welcome"
+welcomestudent@T4:~$ echo echo
+echo
+student@T4:~$ man echo
+student@T4:~$ cat -e sam.txt
+cat: sam.txt: No such file or directory
+student@T4:~$ cd ajce
+student@T4:~/ajce$ cd mca
+student@T4:~/ajce/mca$ cd rmca
+student@T4:~/ajce/mca/rmca$ cat -e sam.txt
+welcome$
+1$
+$
+6$
+$
+78$
+$
+$
+900$
+$
+$
+student@T4:~/ajce/mca/rmca$ cd ~
+student@T4:~$ mkdir amalj
+student@T4:~$ cd amalj
+student@T4:~/amalj$ mkdir regular
+student@T4:~/amalj$ cd regular
+student@T4:~/amalj/regular$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T4:~/amalj/regular$ cd ~
+student@T4:~$ cd ajce
+student@T4:~/ajce$ cd mca
+student@T4:~/ajce/mca$ mv sam.txt hello.txt
+mv: cannot stat 'sam.txt': No such file or directory
+student@T4:~/ajce/mca$ cd rmca
+student@T4:~/ajce/mca/rmca$ mv sam.txt hello.txt
+student@T4:~/ajce/mca/rmca$ ls
+exam.txt  hello.txt  sample.txt
+student@T4:~/ajce/mca/rmca$ 
+

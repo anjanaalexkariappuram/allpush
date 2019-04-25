@@ -1,0 +1,72 @@
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir grepcommand
+student@T4:~/ajce$ cd grepcommand
+student@T4:~/ajce/grepcommand$ cat > file
+hello everybody
+I want all to be happy
+wat about you
+there is a marriage function thant i want to go^C
+student@T4:~/ajce/grepcommand$ grep "to" file
+I want all to be happy
+student@T4:~/ajce/grepcommand$ cat > file1
+there is something
+all are seemms is to be
+^C
+student@T4:~/ajce/grepcommand$ grep "is" file1
+there is something
+all are seemms is to be
+student@T4:~/ajce/grepcommand$ grep "to" file file1
+file:I want all to be happy
+file1:all are seemms is to be
+student@T4:~/ajce/grepcommand$ cat > file3
+HELLO ANJANA
+hello anjana
+Hello alex
+^C
+student@T4:~/ajce/grepcommand$ grep -i "Hello" file3
+HELLO ANJANA
+hello anjana
+Hello alex
+student@T4:~/ajce/grepcommand$ egrep -w 'I|is' file file1
+file:I want all to be happy
+file1:there is something
+file1:all are seemms is to be
+student@T4:~/ajce/grepcommand$ grep 'is*' file file1
+file1:there is something
+file1:all are seemms is to be
+student@T4:~/ajce/grepcommand$ grep -B4 "hello" file
+hello everybody
+student@T4:~/ajce/grepcommand$ grep -B10 "hello" file
+hello everybody
+student@T4:~/ajce/grepcommand$ grep -B10 "happy" file
+hello everybody
+I want all to be happy
+student@T4:~/ajce/grepcommand$ grep -B2 "happy" file
+hello everybody
+I want all to be happy
+student@T4:~/ajce/grepcommand$ grep -B1 "you" file
+I want all to be happy
+wat about you
+student@T4:~/ajce/grepcommand$ grep -A1 "all" file
+I want all to be happy
+wat about you
+student@T4:~/ajce/grepcommand$ grep -A1 "hello" file
+hello everybody
+I want all to be happy
+student@T4:~/ajce/grepcommand$ grep -A2 "hello" file
+hello everybody
+I want all to be happy
+wat about you
+student@T4:~/ajce/grepcommand$ grep -v "hello" file
+I want all to be happy
+wat about you
+student@T4:~/ajce/grepcommand$ grep -n "hello" file
+1:hello everybody
+student@T4:~/ajce/grepcommand$ grep "^all" file
+student@T4:~/ajce/grepcommand$ grep "^start" file
+student@T4:~/ajce/grepcommand$ grep "^I" file
+I want all to be happy
+student@T4:~/ajce/grepcommand$ grep -n "you" file
+3:wat about you
+student@T4:~/ajce/grepcommand$ 
+

@@ -1,0 +1,75 @@
+multiplication.sh
+
+echo "enter the number"
+read n
+for (( i =1; i<=10; i++ ))
+do
+echo "$n * $i = $(( n * i))"
+done
+
+natural.sh
+  
+echo -e "enter the value of n"
+read n 
+for (( i=n; i>=0; i-- ))
+do
+echo $i
+done
+
+
+vowel.sh
+ 
+echo -e "enter the character"
+read n
+if (( $n == 'a' || $n == 'A' || $n == 'e' || $n == 'E' || $n == 'i' || $n == 'I' || $n == 'o' || $n == 'O' || $n == 'u' || $n == 'U' ))
+then
+echo "$n is a vowel"
+elif (( $n >= 'a' &&  $n <= 'z' ) || ( $n >= 'A' &&  $n <= 'Z' ))
+then
+echo "$n is a consonant"
+else
+echo "it is not alphabet"
+fi
+
+
+
+leapyear.sh
+
+echo -e "enter year"
+read a
+if (( $a % 4 == 0 ))
+then
+echo "$a is leapyear"
+else
+echo "$a is not leapyear"
+fi
+
+
+oddeven.sh
+
+
+echo -e "enter number"
+read a
+if (( $a % 2 == 0 ))
+then
+echo "$a is even"
+else
+echo "$a is odd"
+fi
+
+
+compare.sh
+
+echo -e "enter 2 numbers"
+read a
+read b
+if [ $a -eq $b ]
+then
+echo "2 numbers are equal"
+elif [ $a -lt $b ]
+then
+echo "$b is greater"
+else
+echo "$a is greater"
+fi
+

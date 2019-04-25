@@ -1,0 +1,91 @@
+foreven.sh
+
+for i in {0..10..2}
+do
+echo "welcome $i times"
+done
+
+
+welcome 0 times
+welcome 2 times
+welcome 4 times
+welcome 6 times
+welcome 8 times
+welcome 10 times
+
+
+for1.sh
+
+for (( c=1; c<=5; c++ ))
+do
+echo "welcome $c times"
+done
+
+
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times
+
+
+forexx.sh
+
+for i in {1..5}
+do
+echo "welcome $i times"
+done
+
+
+
+forex.sh
+
+for i in 3 2 5 7
+do
+ echo " $i times 5 is $(( $i *5 )) "
+done  
+
+
+
+datee.sh
+
+
+
+if [ "$1" == "Monday" ]
+  then
+   echo "the typed argument is monday"
+elif [ "$1" == "Tuesday" ]
+then
+  echo "typed argument is tuesday"
+else 
+     echo "the typed argument is neither monday or tuesday"
+fi
+
+iffff.sh
+
+echo -e "enter a number:\c"
+read number
+if [ $number -lt 0 ]
+then
+ echo "negative"
+elif [ $number  -eq 0 ]
+then
+  echo "zero"
+else
+ echo "positive"
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir headcommand
+student@T4:~/ajce$ cd headcommand
+student@T4:~/ajce/headcommand$ cat > name.txt
+albina
+aneeta
+anjali
+anjana
+alex nadoo
+basil
+anjal
+sheeba             
+arun
+vincent
+arjun
+anju
+mathi
+reeja
+^C
+student@T4:~/ajce/headcommand$ head name.txt
+albina
+aneeta
+anjali
+anjana
+alex nadoo
+basil
+anjal
+sheeba
+arun
+vincent
+student@T4:~/ajce/headcommand$ head -n 6 name.txt
+albina
+aneeta
+anjali
+anjana
+alex nadoo
+basil
+student@T4:~/ajce/headcommand$ head -c 10 name.txt
+albina
+anestudent@T4:~/ajce/headcommand$ head -c 4 name.txt
+albistudent@T4:~/ajce/headcommand$ 
+student@T4:~/ajce/headcommand$ head -c 4 name.txt
+albistudent@T4:~/ajce/headcommand$ head -c 20 name.txt
+albina
+aneeta
+anjalistudent@T4:~/ajce/headcommand$ cat > sub.txt
+maths
+che
+mala
+adm
+ads
+cn
+data
+sd
+android
+java
+se
+c
+cc
+^C
+student@T4:~/ajce/headcommand$ head -q sub.txt name.txt
+maths
+che
+mala
+adm
+ads
+cn
+data
+sd
+android
+java
+albina
+aneeta
+anjali
+anjana
+alex nadoo
+basil
+anjal
+sheeba
+arun
+vincent
+student@T4:~/ajce/headcommand$ head -v name.txt sub.txt
+==> name.txt <==
+albina
+aneeta
+anjali
+anjana
+alex nadoo
+basil
+anjal
+sheeba
+arun
+vincent
+
+==> sub.txt <==
+maths
+che
+mala
+adm
+ads
+cn
+data
+sd
+android
+java
+student@T4:~/ajce/headcommand$ cd ..
+student@T4:~/ajce$ mkdir tailcommand
+student@T4:~/ajce$ cd tailcommand
+student@T4:~/ajce/tailcommand$ cat > name.txt
+sneha
+achu
+arav
+qw
+er
+ty
+ui
+op
+kl
+hj
+f
+gsd
+az
+x
+cv
+b
+bella
+edward
+cullen
+ddd
+mathi
+vincent
+jo
+^C
+student@T4:~/ajce/tailcommand$ tail name.txt
+cv
+b
+bella
+edward
+cullen
+ddd
+mathi
+vincent
+jo
+
+student@T4:~/ajce/tailcommand$ tail -5 name.txt
+ddd
+mathi
+vincent
+jo
+
+student@T4:~/ajce/tailcommand$ tail -c 6 name.txt
+t
+jo
+
+student@T4:~/ajce/tailcommand$ tail -f  name.txt
+cv
+b
+bella
+edward
+cullen
+ddd
+mathi
+vincent
+jo
+
+    
+^C
+student@T4:~/ajce/tailcommand$ tail -v  name.txt
+==> name.txt <==
+cv
+b
+bella
+edward
+cullen
+ddd
+mathi
+vincent
+jo
+
+student@T4:~/ajce/tailcommand$ tail --version
+tail (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Paul Rubin, David MacKenzie, Ian Lance Taylor,
+and Jim Meyering.
+student@T4:~/ajce/tailcommand$ touch new.txt
+student@T4:~/ajce/tailcommand$ cd ..
+student@T4:~/ajce$ cd lesscommand
+student@T4:~/ajce/lesscommand$ touch new.txt
+student@T4:~/ajce/lesscommand$ less new.txt
+student@T4:~/ajce/lesscommand$ less new.txt
+student@T4:~/ajce/lesscommand$ less new.txt
+student@T4:~/ajce/lesscommand$ 
+

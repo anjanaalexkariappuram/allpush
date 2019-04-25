@@ -1,0 +1,101 @@
+student@T4:~$ cd ajce
+student@T4:~/ajce$ mkdir pastecommand
+student@T4:~/ajce$ cd pastecommand
+student@T4:~/ajce/pastecommand$ cat >aaa
+one
+two      
+three
+four
+^C
+student@T4:~/ajce/pastecommand$ cat > bbb
+1
+2
+3
+4
+^C
+student@T4:~/ajce/pastecommand$ cat >ccc
+anjana
+alex
+sheeba
+anjal
+^C
+student@T4:~/ajce/pastecommand$ paste aaa bbb
+one	1
+two	2
+three	3
+four	4
+student@T4:~/ajce/pastecommand$ paste -d "/"aaa bbb ccc
+1/anjana
+2/alex
+3/sheeba
+4/anjal
+student@T4:~/ajce/pastecommand$ paste -d "/,"aaa bbb ccc
+1/anjana
+2/alex
+3/sheeba
+4/anjal
+student@T4:~/ajce/pastecommand$ paste -d "/"aaa bbb 
+1
+2
+3
+4
+student@T4:~/ajce/pastecommand$ paste -d ":"aaa bbb 
+1
+2
+3
+4
+student@T4:~/ajce/pastecommand$ cat aaa
+one
+two
+three
+four
+student@T4:~/ajce/pastecommand$ paste -d "/" aaa bbb 
+one/1
+two/2
+three/3
+four/4
+student@T4:~/ajce/pastecommand$ paste -d "/," aaa bbb ccc
+one/1,anjana
+two/2,alex
+three/3,sheeba
+four/4,anjal
+student@T4:~/ajce/pastecommand$ paste -s aaa bbb ccc
+one	two	three	four
+1	2	3	4
+anjana	alex	sheeba	anjal
+student@T4:~/ajce/pastecommand$ paste -s -d ":" aaa bbb ccc
+one:two:three:four
+1:2:3:4
+anjana:alex:sheeba:anjal
+student@T4:~/ajce/pastecommand$ paste ---<aaa
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T4:~/ajce/pastecommand$ paste --- < aaa
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T4:~/ajce/pastecommand$ paste --- <aaa
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T4:~/ajce/pastecommand$ paste - - - < aaa
+one	two	three
+four		
+student@T4:~/ajce/pastecommand$ paste -b aaa
+paste: invalid option -- 'b'
+Try 'paste --help' for more information.
+student@T4:~/ajce/pastecommand$ man paste
+student@T4:~/ajce/pastecommand$ paste -v aaa
+paste: invalid option -- 'v'
+Try 'paste --help' for more information.
+student@T4:~/ajce/pastecommand$ paste - - < bbb
+1	2
+3	4
+student@T4:~/ajce/pastecommand$ paste --v aaa
+paste (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by David M. Ihnat and David MacKenzie.
+student@T4:~/ajce/pastecommand$ 
+
